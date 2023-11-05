@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Lexend, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+section {
+    flex: 1; /* Takes up all available horizontal space */
+    padding: 40px 30px;
+}
+
+article {
+    padding: 20px;
+}
+
+article h1{
+    font-size: 2.4em;
+    padding: 10px 0px;
+}
+
+article h2{
+    font-size: 2em;
+    padding: 10px 0px;
+}
+
+article h3 {
+    font-size: 1.4em;
+    font-weight: 1;
+
+}
+
+aside {
+    display: flex;
+    padding-bottom: 10%;
+    flex: 1; /* Takes up all available horizontal space */
+    background-color: #1370cc;
+    align-items: center; /* Center vertically within the container */
+    justify-content: center; /* Center horizontally within the container */
+    flex-direction: column;
+}
+
+aside img {
+    max-width: 100%;
+    width: 90%; /* Ensure the logo doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+aside h2 {
+    font-size: 2em;
+    font-weight: 1;
+    color: white;
+}
+
+.latest_article {
+    margin: 20px 0px;
+    padding: 30px;
+
+    background-color: #fcfcfc;
+    border: #000;
+    border-style: solid;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.latest_article p {
+    padding: 20px 0px 50px 0px;
+    text-indent: 2em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.latest_article a {
+    color: #fff;
+    margin: 20px 0px;
+    padding: 5px;
+    background-color: #1e90ff;
+    border: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
