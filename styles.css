@@ -33,7 +33,7 @@ article h1{
 }
 
 article h2{
-    font-size: 2em;
+    font-size: 1.8em;
     padding: 10px 0px;
 }
 
@@ -41,6 +41,13 @@ article h3 {
     font-size: 1.4em;
     font-weight: 1;
 
+}
+
+article p {
+    text-indent: 2em;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-bottom: 20px;
 }
 
 aside {
@@ -60,7 +67,7 @@ aside img {
 }
 
 aside h2 {
-    font-size: 2em;
+    font-size: 2vw;
     font-weight: 1;
     color: white;
 }
@@ -87,9 +94,9 @@ aside h2 {
 }
 
 .latest_article a {
-    color: #fff;
+    color: white;
     margin: 20px 0px;
-    padding: 5px;
+    padding: 10px;
     background-color: #1e90ff;
     border: black;
     border-style: solid;
@@ -99,4 +106,48 @@ aside h2 {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+
+    main {
+        font-size: 12px;
+    }
+
+    section {
+        padding: 10px 10px;
+    }
+
+    aside {
+        display: none;
+    }
+
+    article {
+        padding: 10px;
+    }
+
+    .latest_article {
+        margin: 10px 0px;
+        padding: 15px;
+        padding-bottom: 20px;
+    }
+
+    .latest_article p {
+        padding: 10px 0px 30px 0px;
+    }
+
+    .latest_article a {
+        font-size: 12px;
+    }
+}
+
+hr {
+    background-color: #aaaaaa;
+    height: 2px;
+    border-width: 0;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }

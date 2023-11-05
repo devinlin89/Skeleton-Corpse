@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    font-size: 20px;
+    padding: 30px;
+    flex-direction: column;
+}
+
+h1 {
+    color: black;
+    font-family: Lexend, sans-serif;
+    font-size: 2.4em;
+}
+
+.article_list {
+    padding: 20px 0px;
+    list-style: none;
+}
+
+.article_list li {
+    border-bottom: 1px solid #ccc; /* Light gray horizontal line */
+    padding: 20px 0; /* Adjust padding for spacing */
+}
+
+.article_list li a{
+    color:black;
+}

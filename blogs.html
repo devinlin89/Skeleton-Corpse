@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeleton Corpse</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header_styles.css">
+    <link rel="stylesheet" href="blog_styles.css">
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/Skeleton Corpse Logo Transparent BG.png" alt="Skeleton Corpse Logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <h1>Article List</h1>
+
+        <ul class="article_list" id="article-list">
+
+        </ul>
+    </main>
+
+    <script>
+        const articleData = [
+        {
+            title: "Skeleton Corpse First Blog",
+            url: "articles/first_blog.html"
+        }
+        ];
+
+        const articleList = document.getElementById("article-list");
+        console.log(articleList)
+
+        articleData.forEach(article => {
+            const listItem = document.createElement("li");
+            const link = document.createElement("a");
+            link.href = article.url;
+            link.textContent = article.title;
+            listItem.appendChild(link);
+            articleList.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>
