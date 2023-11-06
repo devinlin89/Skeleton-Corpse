@@ -52,7 +52,6 @@ article p {
 
 aside {
     display: flex;
-    padding-bottom: 10%;
     flex: 1; /* Takes up all available horizontal space */
     background-color: #1370cc;
     align-items: center; /* Center vertically within the container */
@@ -60,22 +59,100 @@ aside {
     flex-direction: column;
 }
 
-aside img {
+.large_logo_side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.large_logo_side img {
     max-width: 100%;
-    width: 90%; /* Ensure the logo doesn't exceed the container width */
+    width: 65%; /* Ensure the logo doesn't exceed the container width */
     height: auto; /* Maintain aspect ratio */
 }
 
-aside h2 {
+.large_logo_side h2 {
     font-size: 2vw;
     font-weight: 1;
     color: white;
 }
 
+.large_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.large_logo img {
+    max-width: 100%;
+    width: 65%; /* Ensure the logo doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.large_logo h2 {
+    font-size: 2vw;
+    font-weight: 1;
+    color: white;
+}
+
+.small_panels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.small_panels figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.small_panels figure img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    border: 4px solid #aaa;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.small_panels figure h2 {
+    padding-bottom: 20px;
+}
+
+.small_panels figure a {
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    background-color: #1e90ff;
+    border: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
 .latest_article {
     margin: 20px 0px;
     padding: 30px;
-
     background-color: #fcfcfc;
     border: #000;
     border-style: solid;
@@ -112,14 +189,45 @@ aside h2 {
 
     main {
         font-size: 12px;
+        flex-direction: column;
     }
 
     section {
         padding: 10px 10px;
+        width: 100vw;
     }
 
     aside {
+        width: 100vw;
+    }
+
+    .large_logo_side {
         display: none;
+    }
+
+    .small_panels {
+        gap: 10px;
+    }
+
+    .small_panels figure {
+        padding: 15px;
+    }
+
+    .small_panels figure h2 {
+        font-size: 1.2em;
+        padding-bottom: 15px;
+    }
+
+    .small_panels figure img {
+        width: 95%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        margin-bottom: 15px;
+    }
+
+    .small_panels figure a {
+        font-size: 10px;
+        padding: 5px;
     }
 
     article {

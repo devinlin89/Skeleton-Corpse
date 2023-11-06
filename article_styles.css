@@ -29,12 +29,30 @@ h2 {
     padding: 20px;
 }
 
+h3 {
+    color: black;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
 p {
     color: black;
     text-align: justify;
     text-justify: inter-word;
     text-indent: 2em;
     padding-bottom: 30px;
+}
+
+hr {
+    background-color: #aaaaaa;
+    margin-bottom: 20px;
+    height: 2px;
+    border-width: 0;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 img {
@@ -49,6 +67,12 @@ img {
 
 .headline h1 {
     padding-bottom: 20px;
+}
+
+.headline p {
+    text-indent: 0;
+    font-weight: bold;
+    padding-bottom: 10px;
 }
 
 @media (max-width: 768px) {
