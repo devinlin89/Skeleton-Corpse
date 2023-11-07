@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Lexend, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+section {
+    flex: 1; /* Takes up all available horizontal space */
+    padding: 40px 30px;
+}
+
+article {
+    padding: 20px;
+}
+
+article h1{
+    font-size: 2.4em;
+    padding: 10px 0px;
+}
+
+article h2{
+    font-size: 1.8em;
+    padding: 10px 0px;
+}
+
+article h3 {
+    font-size: 1.4em;
+    font-weight: 1;
+
+}
+
+article p {
+    text-indent: 2em;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-bottom: 20px;
+}
+
+.large_logo_side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1370cc;
+}
+
+.large_logo_side img {
+    max-width: 100%;
+    width: 65%;
+    height: auto;
+}
+
+.large_logo_side h2 {
+    font-size: 2vw;
+    font-weight: 1;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    main {
+        font-size: 12px;
+        flex-direction: column;
+    }
+
+    section {
+        padding: 10px 10px;
+        width: 100vw;
+    }
+
+    .large_logo_side {
+        display: none;
+    }
+
+    .small_panels {
+        gap: 10px;
+    }
+
+    .small_panels figure {
+        padding: 15px;
+    }
+
+    .small_panels figure h2 {
+        font-size: 1.2em;
+        padding-bottom: 15px;
+    }
+
+    .small_panels figure img {
+        width: 95%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        margin-bottom: 15px;
+    }
+
+    .small_panels figure a {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    article {
+        padding: 10px;
+    }
+
+    .latest_article {
+        margin: 10px 0px;
+        padding: 15px;
+        padding-bottom: 20px;
+    }
+
+    .latest_article p {
+        padding: 10px 0px 30px 0px;
+    }
+
+    .latest_article a {
+        font-size: 12px;
+    }
+}
+
+hr {
+    background-color: #aaaaaa;
+    height: 2px;
+    border-width: 0;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}

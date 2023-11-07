@@ -9,12 +9,17 @@ main {
     font-size: 20px;
     padding: 30px;
     flex-direction: column;
+    font-family: Lexend, sans-serif;
 }
 
 h1 {
     color: black;
-    font-family: Lexend, sans-serif;
     font-size: 2.4em;
+}
+
+main a {
+    color: black;
+    font-size: 1.2em;
 }
 
 .article_list {
@@ -29,4 +34,32 @@ h1 {
 
 .article_list li a{
     color:black;
+}
+
+@media (max-width: 768px) {
+
+    main {
+        font-size: 12px;
+        flex-direction: column;
+    }
+
+    section {
+        padding: 10px 10px;
+        width: 100vw;
+    }
+
+    article {
+        padding: 10px;
+    }
+}
+
+hr {
+    background-color: #aaaaaa;
+    height: 2px;
+    border-width: 0;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }

@@ -63,12 +63,13 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .large_logo_side img {
     max-width: 100%;
-    width: 65%; /* Ensure the logo doesn't exceed the container width */
-    height: auto; /* Maintain aspect ratio */
+    width: 65%;
+    height: auto;
 }
 
 .large_logo_side h2 {
@@ -86,14 +87,15 @@ aside {
 
 .large_logo img {
     max-width: 100%;
-    width: 65%; /* Ensure the logo doesn't exceed the container width */
-    height: auto; /* Maintain aspect ratio */
+    width: 65%;
+    height: auto;
 }
 
 .large_logo h2 {
     font-size: 2vw;
     font-weight: 1;
     color: white;
+    margin-top: 10px;
 }
 
 .small_panels {
