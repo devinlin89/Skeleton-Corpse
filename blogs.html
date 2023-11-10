@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="header_styles.css">
     <link rel="stylesheet" href="blog_styles.css">
 
+
 </head>
 <body>
     <header>
@@ -32,26 +33,9 @@
 
         </ul>
     </main>
-
     <script>
-        const articleData = [
-        {
-            title: "Skeleton Corpse First Blog",
-            url: "articles/first_blog.html"
-        }
-        ];
-
-        const articleList = document.getElementById("article-list");
-        console.log(articleList)
-
-        articleData.forEach(article => {
-            const listItem = document.createElement("li");
-            const link = document.createElement("a");
-            link.href = article.url;
-            link.textContent = article.title;
-            listItem.appendChild(link);
-            articleList.appendChild(listItem);
-        });
+        htmlFileName = "blogs.html"
     </script>
+    <script src="script.js"></script>
 </body>
 </html>

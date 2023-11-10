@@ -71,6 +71,11 @@ h2 {
     .contact_icon h2 {
         font-size: 16px;
     }
+
+    .email h2 {
+        font-size: 12px;
+        padding-top: 4px;
+    }
 }
 
 hr {

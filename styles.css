@@ -131,6 +131,7 @@ aside {
 }
 
 .small_panels figure h2 {
+    font-size: 24px;
     padding-bottom: 20px;
 }
 
@@ -216,7 +217,7 @@ aside {
     }
 
     .small_panels figure h2 {
-        font-size: 1.2em;
+        font-size: 1em;
         padding-bottom: 15px;
     }
 

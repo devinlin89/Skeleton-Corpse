@@ -30,6 +30,7 @@ main a {
 .article_list li {
     border-bottom: 1px solid #ccc; /* Light gray horizontal line */
     padding: 20px 0; /* Adjust padding for spacing */
+    margin-bottom: 20px;
 }
 
 .article_list li a{

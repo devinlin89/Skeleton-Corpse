@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../header_styles.css">
+    <link rel="stylesheet" href="../article_styles.css">
 
     <style>
         * {
@@ -30,7 +31,9 @@
         }
 
         .headline {
-            background-color: #1370cc;
+            background-image: url("../images/LDK pic.png");
+            background-position: 0 40%;
+            background-size: cover;
         }
 
         h1 {
@@ -72,7 +75,6 @@
 
         .headline h1 {
             padding-bottom: 20px;
-            font-size: 2.6em;
             color: white;
         }
 
@@ -80,6 +82,7 @@
             text-indent: 0;
             font-weight: bold;
             color: white;
+
         }
 
         .headline_text {
@@ -89,6 +92,35 @@
             backdrop-filter: blur(2px);
             padding: 100px;
             font-size: 24px;
+        }
+
+        th, td {
+            padding: 20px;
+        }
+
+        table {
+            table-layout: fixed;
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #1e90ff;
+            margin-bottom: 50px;
+        }
+
+        thead tr {
+            background-color: #1e90ff;
+            color: white;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #eaf4ff;
+          }
+
+        tbody tr:nth-child(even) {
+            background-color: #D9ECFF;
+          }
+
+        tbody th, td {
+            border: 1px solid #1e90ff;
         }
 
         @media (max-width: 768px) {
@@ -124,6 +156,7 @@
             article {
                 padding: 10px;
             }
+
         }
     </style>
 </head>
@@ -139,80 +172,61 @@
             </ul>
         </nav>
     </header>
-        <section class="headline">
-            <div class="headline_text">
-                <h1>Skeleton Corpse First Blog: The Start To A Journey</h1>
-                <p>
-                    Written by Devin Lin <br>
-                    Published on 5th of November 2023
-                </p>
-            </div>
-        </section>
-        <main>
+    <section class="headline">
+        <div class="headline_text">
+            <h1>SH SC Election Candidates Announcement</h1>
+            <p>
+                Written by Devin Lin <br>
+                Published on 10th November 2023
+            </p>
+        </div>
+    </section>
+    <main>
         <p>
-            Welcome to Skeleton Corpse! We're thrilled to have you here .
-            In this inaugural blog post, we want to introduce myself and
-            provide a glimpse of what you can expect from our website.
+            This is the moment we've all been waiting for,
+            the announcement of the candidates of the 2023
+            Naradanian Senior High Student Council Presidential Election.
+            On one side, we got Candidate 1, Darren Jose Yang as the
+            presidential candidate and Oliver Derrick Cia. And their
+            opposition, Candidate 2, Rico Febrian Sulaiman and Orlando
+            Klaus Eriso respectively.
         </p>
 
-        <h2>My Reason For Starting This</h2>
-        <p>
-            I want a platform where I can share my thoughts with people.
-            Without censorship or repercussions. I want to share my true
-            and raw opinions about the things that I'm interested in.
-        </p>
+        <h2>Candidate Data</h2>
 
-        <h2>What You'll Find Here</h2>
-        <ul>
-            <li>
-                <h3>Programming</h3>
-                <p>
-                    I of course aspire to become a software engineer in the future.
-                    I made this website as a way to experiment with Web Dev.
-                    I want to share programming news and the such on this platform.
-                </p>
-            </li>
-            <li>
-                <h3>Formula 1</h3>
-                <p>
-                    I absolutely love Formula 1. The cars and the drivers, I love them both all.
-                    If you know me, you probably know that I'm a fan of Yuki Tsunoda.
-                    I absolutely adore him, so you will find some content related to him here.
-                </p>
-            </li>
-            <li>
-                <h3>Cycling</h3>
-                <p>
-                    Cycling is something I enjoy doing when I get the chance.
-                    I don't cycle often, but I cherish every second I am on my bike.
-                    I love my bike very much, I cried when I scratched it.
-                    So if you see any cycling-related posts, it's because they are coming straight from my heart.
-                </p>
-            </li>
-            <li>
-                <h3>School Stuff</h3>
-                <p>
-                    Of course I'm still a student, so I will be talking about the events at my school.
-                    It may be about Student Council Elections, my take on new rules, etc.
-                    It's always good to keep up-to-date with what's happening there.
-                </p>
-            </li>
-            <li>
-                <h3>Other</h3>
-                <p>
-                    Naturally, my interests are up bound to change.
-                    The topics that I will be covering are not set in stone and will change over time.
-                    This blog is for fun after all so I don't have to keep everything consistent.
-                    I just hope you guys enjoy reading this.
-                </p>
-            </li>
-        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>&nbsp;Election Candidates</th>
+                    <th>Candidate 1</th>
+                    <th>Candidate 2</th>
+                </tr>
+            </thead>
+             <tbody>
+                <tr >
+                    <th>Ballot Number</th>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr >
+                    <th>Presidential Candidate</th>
+                    <td>Darren Jose Yang</td>
+                    <td>Rico Febrian Sulaiman</td>
+                </tr>
+                <tr>
+                    <th>Vice Presidential Candidate</th>
+                    <td>Oliver Derrick Cia</td>
+                    <td>Orlando Klaus Eriso</td>
+                </tr>
+            </tbody>
+        </table>
 
         <p>
-            So now that I have gotten everything out of the way,
-            I just hope you and I have fun during the operation of this blog.
-            I think I will be covering the Brazil GP tomorrow, so stay tuned!
+            I'm very interested in how the strategies of the candidates are going to play out in this campaign season.
+            On the other hand, both candidates are long-time establishment council members with good histories,
+            so I don't expect any major upsets in the election. Despite this, I'm still looking forward to this
         </p>
+
     </main>
 </body>
 </html>
